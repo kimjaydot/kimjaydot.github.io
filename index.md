@@ -1,3 +1,2 @@
-## This is a test
-## display theme
-# kim
+## Visit my online portfolio [Here] (http://www.kimjaydot.com)
+
