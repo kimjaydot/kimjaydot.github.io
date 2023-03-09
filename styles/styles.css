@@ -24,3 +24,22 @@ h1.projects {
 .btn-primary {
   display: block;
 }
+
+header.d-flex {
+  background: #ffffff;
+}
+
+.active {
+  background: #000000 !important;
+}
+
+.btn-primary {
+  background: #000000;
+  color: #ffffff;
+  border: none;
+}
+
+.btn-primary:hover {
+  background: #6c757d;
+  color: #ffffff;
+}
