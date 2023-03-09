@@ -1,0 +1,26 @@
+.fs-4 {
+  color: #000000;
+}
+
+.nav-item a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.profile {
+  border-radius: 50px;
+  border: 2px #000000;
+}
+
+.container {
+  display: block;
+  margin: 0 auto;
+}
+
+h1.projects {
+  text-align: center;
+}
+
+.btn-primary {
+  display: block;
+}
