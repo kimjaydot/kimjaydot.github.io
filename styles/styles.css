@@ -43,3 +43,11 @@ header.d-flex {
   background: #6c757d;
   color: #ffffff;
 }
+
+@media (max-width: 500px) {
+  .profile {
+    display: block;
+    margin: 0 auto;
+    border: 10px solid #6c757d;
+  }
+}
