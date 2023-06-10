@@ -13,12 +13,17 @@ div#container {
 }
 
 .navbar {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  width: 100%;
   background: #ffffff;
   color: #000000;
   display: flex;
   justify-content: space-around;
   align-items: center;
   font-size: 28px;
+  box-shadow: 10px 10px 12px -10px rgba(0, 0, 0, 0.75);
 }
 
 .navlist {
