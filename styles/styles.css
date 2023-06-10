@@ -1,53 +1,55 @@
-.fs-4 {
-  color: #000000;
+body {
+  background-color: white;
+  margin-top: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
 }
 
-.nav-item a {
-  color: #000000;
-  text-decoration: none;
-}
-
-.profile {
-  border-radius: 50px;
-  border: 2px #000000;
-}
-
-.container {
+div#container {
+  max-width: 100%;
   display: block;
   margin: 0 auto;
+  background-color: #ffffff;
 }
 
-h1.projects {
-  text-align: center;
-}
-
-.btn-primary {
-  display: block;
-}
-
-header.d-flex {
+.navbar {
   background: #ffffff;
+  color: #000000;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 28px;
 }
 
-.active {
-  background: #000000 !important;
+.navlist {
+  list-style-type: none;
 }
 
-.btn-primary {
-  background: #000000;
+.navlist li {
+  display: inline;
+  padding: 16px;
+}
+
+#main-info {
+  background-image: url("/images/houston_city_bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /*filter: grayscale(1);*/
+  padding: 400px;
+  text-align: center;
   color: #ffffff;
-  border: none;
+  text-shadow: 2px 4px 4px rgba(46, 91, 173, 0.6);
 }
 
-.btn-primary:hover {
-  background: #6c757d;
+header a {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: black;
   color: #ffffff;
-}
-
-@media (max-width: 500px) {
-  .profile {
-    display: block;
-    margin: 0 auto;
-    border: 10px solid #6c757d;
-  }
+  padding: 16px 32px;
+  display: inline-block;
+  margin-top: 10px;
 }
