@@ -1,3 +1,3 @@
-# kimjaydot.github.io 
- 
- This is my GitHub Page space. Please visit my online portfolio [Here](http://www.kimjaydot.com).
+# kimjaydot.github.io
+
+Hello! I'm Kimberley Johnson, your UX Researcher & Developer. Please check out my online portfolio.[Here](https://www.kimjaydot.com).
