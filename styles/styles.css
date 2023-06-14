@@ -39,6 +39,7 @@ div#container {
 
 .navlist {
   list-style-type: none;
+  padding: 0;
 }
 
 .navlist li {
@@ -58,10 +59,25 @@ div#container {
   background-size: cover;
   background-repeat: no-repeat;
   /*filter: grayscale(1);*/
-  padding: 400px;
+  padding: 300px;
   text-align: center;
   color: #ffffff;
   text-shadow: 2px 4px 4px rgba(46, 91, 173, 0.6);
+}
+.btn {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #2e5bad;
+  color: #ffffff;
+  padding: 16px 32px;
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  max-width: 35%;
+  margin: 0 auto;
 }
 
 header a {
@@ -79,6 +95,40 @@ header a {
 
 .menu {
   display: none;
+}
+
+section {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+h1.about {
+  font-family: "Playfair Display", serif;
+  font-size: 75px;
+  padding: 0;
+  margin: 0;
+  line-height: 1em;
+}
+
+h2.about {
+  font-size: 30px;
+  line-height: 50px;
+}
+
+.heading-title {
+  text-align: center;
+}
+.grid-separation {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+}
+
+.aboutme-pic {
+  border-radius: 2px;
+  border: 2px solid #2e5bad;
+  width: 100%;
 }
 
 @media all and (max-width: 620px) {
@@ -112,5 +162,10 @@ header a {
 
   .active {
     display: block;
+  }
+
+  #main-info {
+    padding: 50px;
+    text-align: center;
   }
 }
