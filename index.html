@@ -16,12 +16,17 @@
   <body>
     <div id="container">
       <nav class="navbar">
-        <div>KIMJAYDOT</div>
-        <ul class="navlist">
-          <li>About</li>
-          <li>Portfolio</li>
-          <li>Contact</li>
+        <div class="logo-icon">KIMJAYDOT</div>
+        <ul class="navlist" id="navi-list">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
+        <div class="menu" id="toggleButton">
+          <div class="menu-line"></div>
+          <div class="menu-line"></div>
+          <div class="menu-line"></div>
+        </div>
       </nav>
 
       <header id="main-info">
@@ -31,5 +36,13 @@
         <a href="#more" class="btn">Learn More</a>
       </header>
     </div>
+    <script>
+      const toggleButton = document.getElementById("toggleButton");
+      const naviList = document.getElementById("navi-list");
+
+      toggleButton.addEventListener("click", () => {
+        naviList.classList.toggle("active");
+      });
+    </script>
   </body>
 </html>
