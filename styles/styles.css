@@ -28,6 +28,7 @@ div#container {
 }
 .logo-icon {
   color: #2e5bad;
+  font-weight: 700;
 }
 
 .navbar a {
@@ -182,5 +183,9 @@ h2.heading-style {
   #main-info {
     padding: 50px;
     text-align: center;
+  }
+
+  .grid-separation {
+    grid-template-columns: 1fr;
   }
 }
