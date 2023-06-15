@@ -26,6 +26,9 @@ div#container {
   font-size: 28px;
   box-shadow: 10px 10px 12px -10px rgba(0, 0, 0, 0.75);
 }
+.logo-icon {
+  color: #2e5bad;
+}
 
 .navbar a {
   color: #000000;
@@ -63,6 +66,7 @@ div#container {
   text-align: center;
   color: #ffffff;
   text-shadow: 2px 4px 4px rgba(46, 91, 173, 0.6);
+  line-height: 1em;
 }
 .btn {
   font-weight: 700;
@@ -80,6 +84,17 @@ div#container {
   margin: 0 auto;
 }
 
+h1 {
+  font-size: 65px;
+}
+
+h2 {
+  font-size: 45px;
+}
+
+h2 {
+  font-size: 35px;
+}
 header a {
   font-weight: 700;
   font-size: 14px;
@@ -103,17 +118,17 @@ section {
   padding: 50px;
 }
 
-h1.about {
+h1.heading-style {
   font-family: "Playfair Display", serif;
-  font-size: 75px;
+  font-size: 45px;
   padding: 0;
   margin: 0;
   line-height: 1em;
 }
 
-h2.about {
-  font-size: 30px;
-  line-height: 50px;
+h2.heading-style {
+  font-size: 22px;
+  text-transform: uppercase;
 }
 
 .heading-title {
