@@ -134,6 +134,7 @@ h1.heading-style {
 h2.heading-style {
   font-size: 22px;
   text-transform: uppercase;
+  padding: 10px;
 }
 
 .heading-title {
