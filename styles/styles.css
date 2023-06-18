@@ -123,18 +123,19 @@ section {
   padding: 50px;
 }
 
+.heading-title {
+  padding: 15px;
+  margin: 5px;
+}
+
 h1.heading-style {
   font-family: "Playfair Display", serif;
   font-size: 45px;
-  padding: 0;
-  margin: 0;
-  line-height: 1em;
 }
 
 h2.heading-style {
   font-size: 22px;
   text-transform: uppercase;
-  padding: 10px;
 }
 
 .heading-title {
@@ -154,6 +155,9 @@ h2.heading-style {
 
 .secondary {
   background: #2e5bad;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 50px;
 }
 
 .grid-separation-three {
@@ -185,6 +189,24 @@ h2.heading-style {
 .embed {
   width: 100%;
   aspect-ratio: 1 / 1;
+}
+
+.footer-section {
+  max-width: 100%;
+  background: #2e5bad;
+  color: #ffffff;
+}
+
+.footer-3-narrow {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-gap: 30px;
+}
+
+.fa-brands {
+  font-size: 50px;
+  display: block;
+  margin: 10px;
 }
 
 @media all and (max-width: 620px) {
@@ -244,5 +266,9 @@ h2.heading-style {
   blockquote {
     margin: 0 auto;
     display: block;
+  }
+
+  .footer-3-narrow {
+    grid-template-columns: 1fr;
   }
 }
