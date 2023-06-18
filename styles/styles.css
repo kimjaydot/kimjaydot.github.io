@@ -207,6 +207,14 @@ h2.heading-style {
   font-size: 50px;
   display: block;
   margin: 10px;
+  color: #ffffff;
+}
+
+.fa-brands a {
+  font-size: 50px;
+  display: block;
+  margin: 10px;
+  color: #ffffff;
 }
 
 @media all and (max-width: 620px) {
