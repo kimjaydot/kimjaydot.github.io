@@ -67,7 +67,7 @@ div#container {
   text-align: center;
   color: #ffffff;
   text-shadow: 2px 4px 4px rgba(46, 91, 173, 0.6);
-  line-height: 1em;
+  line-height: 3.5em;
 }
 .btn {
   font-weight: 700;
@@ -81,20 +81,24 @@ div#container {
   display: block;
   text-align: center;
   margin-top: 10px;
-  max-width: 35%;
+  max-width: 100%;
   margin: 0 auto;
 }
 
 h1 {
-  font-size: 65px;
+  font-size: 40px;
+  margin: 0;
+  padding: 0;
 }
 
 h2 {
-  font-size: 45px;
+  font-size: 50px;
+  margin: 0;
 }
 
-h2 {
-  font-size: 35px;
+h3 {
+  font-size: 20px;
+  margin: 0;
 }
 header a {
   font-weight: 700;
@@ -147,6 +151,41 @@ h2.heading-style {
   width: 100%;
 }
 
+.secondary {
+  background: #2e5bad;
+}
+
+.grid-separation-three {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.card-header img {
+  display: block;
+  margin: 0 auto;
+}
+
+.card {
+  background: white;
+  border-radius: 4px;
+  border: 2px solid #b2beb5;
+  margin: 30px 0;
+}
+
+.card-body {
+  padding: 32px;
+}
+
+.card-footer {
+  padding: 0 30px 30px;
+}
+
+.embed {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}
+
 @media all and (max-width: 620px) {
   .navbar {
     flex-direction: column;
@@ -187,5 +226,22 @@ h2.heading-style {
 
   .grid-separation {
     grid-template-columns: 1fr;
+  }
+
+  .grid-separation-three {
+    grid-template-columns: 1fr;
+  }
+
+  .embed {
+    aspect-ratio: 16 /9;
+  }
+
+  .instagram-embeds {
+    margin: 30px 0;
+  }
+
+  blockquote {
+    margin: 0 auto;
+    display: block;
   }
 }
