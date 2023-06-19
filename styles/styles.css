@@ -216,6 +216,9 @@ h2.heading-style {
   margin: 10px;
   color: #ffffff;
 }
+.email a {
+  color: #ffffff;
+}
 
 @media all and (max-width: 620px) {
   .navbar {
