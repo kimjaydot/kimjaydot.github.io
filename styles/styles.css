@@ -175,7 +175,7 @@ h2.heading-style {
   background: white;
   border-radius: 4px;
   border: 2px solid #b2beb5;
-  margin: 30px 0;
+  /*margin: 30px 0;*/
 }
 
 .card-body {
@@ -203,6 +203,11 @@ h2.heading-style {
   grid-gap: 30px;
 }
 
+.footer-3-narrow a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
 .fa-brands {
   font-size: 50px;
   display: block;
@@ -214,9 +219,6 @@ h2.heading-style {
   font-size: 50px;
   display: block;
   margin: 10px;
-  color: #ffffff;
-}
-.email a {
   color: #ffffff;
 }
 
