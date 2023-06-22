@@ -207,7 +207,9 @@ h2.heading-style {
   color: #ffffff;
   text-decoration: none;
 }
-
+.social-links {
+  display: inline;
+}
 .fa-brands {
   font-size: 50px;
   display: block;
@@ -223,6 +225,11 @@ h2.heading-style {
 }
 
 @media all and (max-width: 620px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
   .navbar {
     flex-direction: column;
     position: relative;
