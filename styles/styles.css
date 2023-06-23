@@ -120,7 +120,7 @@ header a {
 section {
   max-width: 100%;
   margin: 0 auto;
-  padding: 50px;
+  /* padding: 50px; */
 }
 
 .heading-title {
@@ -157,7 +157,7 @@ h2.heading-style {
   background: #2e5bad;
   max-width: 100%;
   margin: 0 auto;
-  padding: 50px;
+  /* padding: 5px; */
 }
 
 .grid-separation-three {
