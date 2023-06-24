@@ -26,6 +26,7 @@ div#container {
   font-size: 28px;
   box-shadow: 10px 10px 12px -10px rgba(0, 0, 0, 0.75);
 }
+
 .logo-icon {
   color: #2e5bad;
   font-weight: 700;
@@ -69,6 +70,7 @@ div#container {
   text-shadow: 2px 4px 4px rgba(46, 91, 173, 0.6);
   line-height: 3.5em;
 }
+
 .btn {
   font-weight: 700;
   font-size: 14px;
@@ -100,6 +102,7 @@ h3 {
   font-size: 20px;
   margin: 0;
 }
+
 header a {
   font-weight: 700;
   font-size: 14px;
@@ -120,7 +123,7 @@ header a {
 section {
   max-width: 100%;
   margin: 0 auto;
-  padding: 50px;
+  /* padding: 50px; */
 }
 
 .heading-title {
@@ -141,6 +144,7 @@ h2.heading-style {
 .heading-title {
   text-align: center;
 }
+
 .grid-separation {
   display: grid;
   grid-template-columns: 2fr 3fr;
@@ -207,9 +211,11 @@ h2.heading-style {
   color: #ffffff;
   text-decoration: none;
 }
+
 .social-links {
   display: inline;
 }
+
 .fa-brands {
   font-size: 50px;
   display: block;
@@ -222,6 +228,12 @@ h2.heading-style {
   display: block;
   margin: 10px;
   color: #ffffff;
+}
+
+@media (max-width: 992px) {
+  .secondary {
+    padding: 0;
+  }
 }
 
 @media all and (max-width: 620px) {
@@ -238,6 +250,7 @@ h2.heading-style {
   .navbar .logo-icon {
     width: 100%;
   }
+
   .menu {
     display: block;
     position: absolute;
