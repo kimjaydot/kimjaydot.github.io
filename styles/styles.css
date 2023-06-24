@@ -224,6 +224,10 @@ h2.heading-style {
   color: #ffffff;
 }
 
+.img-responsive {
+  max-width: 100%;
+}
+
 @media all and (max-width: 620px) {
   body {
     margin: 0;
