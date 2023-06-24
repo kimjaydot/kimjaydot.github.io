@@ -120,7 +120,7 @@ header a {
 section {
   max-width: 100%;
   margin: 0 auto;
-  padding: 100px;
+  padding: 50px;
 }
 
 .heading-title {
@@ -157,7 +157,6 @@ h2.heading-style {
   background: #2e5bad;
   max-width: 100%;
   margin: 0 auto;
-  padding: 50px;
 }
 
 .grid-separation-three {
@@ -200,7 +199,7 @@ h2.heading-style {
 .footer-3-narrow {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr;
-  grid-gap: 30px;
+  grid-gap: 25px;
 }
 
 .footer-3-narrow a {
@@ -226,6 +225,12 @@ h2.heading-style {
 
 .img-responsive {
   max-width: 100%;
+}
+
+.grid-instagram {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 25px;
 }
 
 @media all and (max-width: 620px) {
@@ -284,12 +289,15 @@ h2.heading-style {
   }
 
   .instagram-embeds {
-    margin: 30px;
+    margin: 20px 0px;
   }
-
   blockquote {
     margin: 0 auto;
     display: block;
+  }
+
+  .grid-instagram {
+    grid-template-columns: 1fr;
   }
 
   .footer-3-narrow {
