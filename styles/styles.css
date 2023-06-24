@@ -141,7 +141,7 @@ h2.heading-style {
 .heading-title {
   text-align: center;
 }
-.grid-separation {
+.grid-about-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 25px;
@@ -276,7 +276,7 @@ h2.heading-style {
     text-align: center;
   }
 
-  .grid-separation {
+  .grid-about-section {
     grid-template-columns: 1fr;
   }
 
