@@ -143,18 +143,14 @@ h2.heading-style {
 }
 .grid-separation {
   display: grid;
-  grid-template-columns: 2fr 3fr;
-  grid-gap: 50px;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 25px;
 }
 
 .aboutme-pic {
   border-radius: 2px;
   border: 2px solid #2e5bad;
   width: 100%;
-}
-
-.grid {
-  display: grid;
 }
 
 .secondary {
