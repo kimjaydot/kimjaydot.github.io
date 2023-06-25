@@ -366,20 +366,3 @@ h2.heading-style {
     color: #ffffff;
   }
 }
-
-@media (min-width: 1000px) {
-  section {
-    padding: 50px;
-  }
-
-  #main-info {
-    background-image: url("/images/houston_city_bg.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 200px;
-    text-align: center;
-    color: #ffffff;
-    text-shadow: 2px 4px 4px rgba(46, 91, 173, 0.6);
-    line-height: 3.5em;
-  }
-}
