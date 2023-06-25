@@ -206,19 +206,17 @@ h2.heading-style {
   color: #ffffff;
   text-decoration: none;
 }
-.social-links {
-  display: inline;
-}
+
 .fa-brands {
   font-size: 50px;
-  display: block;
-  margin: 5px;
+  display: inline;
   color: #ffffff;
+  margin: 10px;
 }
 
 .fa-brands a {
   font-size: 50px;
-  display: block;
+  display: inline;
   margin: 10px;
   color: #ffffff;
 }
@@ -233,7 +231,7 @@ h2.heading-style {
   grid-gap: 25px;
 }
 
-@media all and (max-width: 620px) {
+@media all and (max-width: 500px) {
   body {
     margin: 0;
     padding: 0;
@@ -304,5 +302,84 @@ h2.heading-style {
 
   .footer-3-narrow {
     grid-template-columns: 1fr;
+  }
+}
+
+@media all and (max-width: 960px) {
+  section {
+    padding: 20px;
+  }
+
+  #main-info {
+    background-image: url("/images/houston_city_bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 2px 4px 4px rgba(46, 91, 173, 0.6);
+    line-height: 3.5em;
+  }
+
+  .grid-about-section {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-separation-three {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    align-content: center;
+    justify-content: center;
+  }
+
+  .embed {
+    aspect-ratio: 16 /9;
+  }
+
+  .instagram-embeds {
+    padding: 0px;
+  }
+  blockquote {
+    margin: 0 auto;
+    display: block;
+  }
+
+  .grid-instagram {
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+
+  .footer-3-narrow {
+    grid-template-columns: 1fr;
+  }
+
+  .fa-brands {
+    font-size: 50px;
+    display: inline;
+    margin: 5px;
+    color: #ffffff;
+  }
+
+  .fa-brands a {
+    font-size: 50px;
+    display: inline;
+    margin: 10px;
+    color: #ffffff;
+  }
+}
+
+@media (min-width: 1000px) {
+  section {
+    padding: 50px;
+  }
+
+  #main-info {
+    background-image: url("/images/houston_city_bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 200px;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 2px 4px 4px rgba(46, 91, 173, 0.6);
+    line-height: 3.5em;
   }
 }
