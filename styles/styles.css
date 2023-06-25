@@ -62,7 +62,6 @@ div#container {
   background-image: url("/images/houston_city_bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  /*filter: grayscale(1);*/
   padding: 300px;
   text-align: center;
   color: #ffffff;
@@ -232,9 +231,8 @@ h2.heading-style {
 }
 
 @media all and (max-width: 500px) {
-  body {
-    margin: 0;
-    padding: 0;
+  section {
+    padding: 10px;
   }
 
   .navbar {
