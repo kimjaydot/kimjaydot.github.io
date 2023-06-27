@@ -68,21 +68,6 @@ div#container {
   text-shadow: 2px 4px 4px rgba(46, 91, 173, 0.6);
   line-height: 3.5em;
 }
-.btn {
-  font-weight: 700;
-  font-size: 14px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  text-decoration: none;
-  background: #2e5bad;
-  color: #ffffff;
-  padding: 16px 32px;
-  display: block;
-  text-align: center;
-  margin-top: 10px;
-  max-width: 100%;
-  margin: 0 auto;
-}
 
 h1 {
   font-size: 40px;
@@ -99,17 +84,33 @@ h3 {
   font-size: 20px;
   margin: 0;
 }
-header a {
+.header-btn {
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 3px;
   text-transform: uppercase;
   text-decoration: none;
-  background: black;
+  background: #2e5bad;
   color: #ffffff;
-  padding: 16px 32px;
+  padding: 10px 50px;
   display: inline-block;
   margin-top: 10px;
+}
+
+.btn {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #2e5bad;
+  color: #ffffff;
+  padding: 16px 32px;
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 .menu {
@@ -152,6 +153,20 @@ h2.heading-style {
   width: 100%;
 }
 
+.resume-btn {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #2e5bad;
+  color: #ffffff;
+  padding: 10px 50px;
+  display: block;
+  margin-top: 10px;
+  text-align: center;
+}
+
 .secondary {
   background: #2e5bad;
   max-width: 100%;
@@ -189,6 +204,12 @@ h2.heading-style {
   aspect-ratio: 1 / 1;
 }
 
+.grid-instagram {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 25px;
+}
+
 .footer-section {
   max-width: 100%;
   background: #2e5bad;
@@ -220,14 +241,23 @@ h2.heading-style {
   color: #ffffff;
 }
 
-.img-responsive {
-  max-width: 100%;
+.github-btn {
+  background-color: #000000;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: black;
+  color: #ffffff;
+  padding: 16px 32px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
 }
 
-.grid-instagram {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 25px;
+.img-responsive {
+  max-width: 100%;
 }
 
 @media all and (max-width: 500px) {
