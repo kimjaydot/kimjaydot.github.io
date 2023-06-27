@@ -295,7 +295,7 @@ h2.heading-style {
     margin: 20px 0px;
   }
   blockquote {
-    margin: 0 auto;
+    margin: 1px auto;
     display: block;
   }
 
@@ -342,8 +342,8 @@ h2.heading-style {
     padding: 0px;
   }
   blockquote {
-    margin: 0 auto;
     display: block;
+    margin: 1px auto;
   }
 
   .grid-instagram {
