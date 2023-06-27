@@ -301,6 +301,8 @@ h2.heading-style {
 
   .grid-instagram {
     grid-template-columns: 1fr;
+    grid-gap: 10px;
+    justify-items: center;
   }
 
   .footer-3-narrow {
@@ -349,6 +351,7 @@ h2.heading-style {
   .grid-instagram {
     grid-template-columns: 1fr;
     grid-gap: 10px;
+    justify-items: center;
   }
 
   .footer-3-narrow {
