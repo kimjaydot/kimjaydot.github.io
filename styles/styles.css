@@ -401,4 +401,11 @@ h2.heading-style {
     margin: 10px;
     color: #ffffff;
   }
+  .github-btn,
+  .resume-btn,
+  .btn {
+    max-width: 150px;
+    margin: 0 auto;
+    padding: 10px 10px;
+  }
 }
