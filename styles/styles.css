@@ -129,6 +129,17 @@ h2.heading-style {
   text-transform: uppercase;
 }
 
+h1.heading-style-w {
+  font-family: "Playfair Display", serif;
+  font-size: 45px;
+  color: #ffffff;
+}
+
+h2.heading-style-w {
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
 .heading-title {
   text-align: center;
 }
