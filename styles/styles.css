@@ -242,13 +242,12 @@ h2.heading-style-w {
   display: inline;
   color: #ffffff;
   margin: 10px;
+  transition: background-color 0.5s ease;
 }
 
-.fa-brands a {
+.fa-brands:hover {
+  color: #000000;
   font-size: 50px;
-  display: inline;
-  margin: 10px;
-  color: #ffffff;
 }
 
 .img-responsive {
@@ -395,7 +394,9 @@ h2.heading-style-w {
     display: inline;
     margin: 10px;
     color: #ffffff;
+    transition: background-color 0.5s ease;
   }
+
   .github-btn,
   .resume-btn,
   .btn {
