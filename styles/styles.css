@@ -13,6 +13,12 @@ div#container {
   background-color: #ffffff;
 }
 
+.navbar .logo-icon a {
+  text-decoration: none;
+  color: #2e5bad;
+  font-weight: 700;
+}
+
 .navbar {
   position: fixed;
   overflow: hidden;
