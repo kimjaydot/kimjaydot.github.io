@@ -108,6 +108,7 @@ h3 {
   margin-top: 10px;
   max-width: 175px;
   margin: 0 auto;
+  transition: background-color 0.4s ease;
 }
 
 #main-info a:hover {
