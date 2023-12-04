@@ -110,6 +110,11 @@ h3 {
   margin: 0 auto;
 }
 
+#main-info a:hover {
+  background: #000000;
+  color: #ffffff;
+}
+
 .menu {
   display: none;
 }
@@ -161,6 +166,11 @@ h2.heading-style-w {
   width: 100%;
 }
 
+.grid-about-section a:hover {
+  background: #000000;
+  color: #ffffff;
+}
+
 .secondary {
   background: #2e5bad;
   max-width: 100%;
@@ -171,6 +181,11 @@ h2.heading-style-w {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
+}
+
+.grid-separation-three a:hover {
+  background: #000000;
+  color: #ffffff;
 }
 
 .card-header img {
