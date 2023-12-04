@@ -232,9 +232,12 @@ h2.heading-style-w {
   grid-gap: 25px;
 }
 
-.footer-3-narrow a {
+h3.connect a:hover {
   color: #ffffff;
-  text-decoration: none;
+}
+
+.footer-3-narrow a:hover {
+  color: #000000;
 }
 
 .fa-brands {
