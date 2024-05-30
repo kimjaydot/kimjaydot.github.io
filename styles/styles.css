@@ -71,14 +71,21 @@ div#container {
 }
 
 #main-info {
-  background-image: url("/images/houston_city_bg.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 300px;
+  background: linear-gradient(
+    90deg,
+    rgb(168, 206, 225) 0%,
+    rgb(158, 218, 96) 100%
+  );
+  padding: 275px;
   text-align: center;
   color: #ffffff;
   text-shadow: 2px 4px 4px rgba(46, 91, 173, 0.6);
-  line-height: 3.5em;
+}
+
+#main-info h1 {
+  color: #ffffff;
+  text-align: center;
+  font-size: 75px;
 }
 
 h1 {
@@ -97,10 +104,27 @@ h3 {
   margin: 0;
 }
 
+header#main-info .header-btn {
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 14px;
+  max-width: 175px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #2e5bad;
+  color: #ffffff;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  transition: background-color 0.4s ease;
+}
+
 .github-btn,
 .resume-btn,
 .header-btn,
 .btn {
+  border-radius: 50px;
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 3px;
@@ -274,7 +298,8 @@ h3.connect a:hover {
 
   .navbar {
     flex-direction: column;
-    position: relative;
+    /*position: relative;*/
+    position: fixed;
   }
 
   .navbar .logo-icon {
@@ -307,6 +332,33 @@ h3.connect a:hover {
   #main-info {
     padding: 50px;
     text-align: center;
+  }
+
+  #main-info h1 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 35px;
+  }
+
+  .github-btn,
+  .resume-btn,
+  .header-btn,
+  .btn {
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #2e5bad;
+    color: #ffffff;
+    padding: 16px 32px;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    max-width: 175px;
+    margin: 0 auto;
+    transition: background-color 0.4s ease;
   }
 
   .grid-about-section {
@@ -348,14 +400,51 @@ h3.connect a:hover {
   }
 
   #main-info {
-    background-image: url("/images/houston_city_bg.jpg");
+    background: linear-gradient(
+      90deg,
+      rgb(168, 206, 225) 0%,
+      rgb(158, 218, 96) 100%
+    );
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 50px;
+    padding: 120px;
     text-align: center;
     color: #ffffff;
     text-shadow: 2px 4px 4px rgba(46, 91, 173, 0.6);
-    line-height: 3.5em;
+  }
+
+  header#main-info .header-btn {
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 14px;
+    max-width: 175px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #2e5bad;
+    color: #ffffff;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    transition: background-color 0.4s ease;
+  }
+
+  #main-info h1 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 45px;
+  }
+
+  #main-info h2 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 25px;
+  }
+
+  #main-info h3 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 20px;
   }
 
   .grid-about-section {
