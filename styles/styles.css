@@ -330,14 +330,14 @@ h3.connect a:hover {
   }
 
   #main-info {
-    padding: 50px;
+    padding: 30px;
     text-align: center;
   }
 
   #main-info h1 {
     color: #ffffff;
     text-align: center;
-    font-size: 35px;
+    font-size: 10px;
   }
 
   .github-btn,
@@ -407,7 +407,7 @@ h3.connect a:hover {
     );
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 120px;
+    padding: 75px;
     text-align: center;
     color: #ffffff;
     text-shadow: 2px 4px 4px rgba(46, 91, 173, 0.6);
@@ -432,7 +432,7 @@ h3.connect a:hover {
   #main-info h1 {
     color: #ffffff;
     text-align: center;
-    font-size: 45px;
+    font-size: 35px;
   }
 
   #main-info h2 {
@@ -444,7 +444,7 @@ h3.connect a:hover {
   #main-info h3 {
     color: #ffffff;
     text-align: center;
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .grid-about-section {
