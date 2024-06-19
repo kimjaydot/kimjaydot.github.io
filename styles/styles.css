@@ -195,14 +195,19 @@ h2.heading-style-w {
 }
 .grid-about-section {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 25px;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  align-items: center;
 }
 
 .aboutme-pic {
   border-radius: 2px;
   border: 2px solid #2e5bad;
   width: 100%;
+  max-width: 500px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 .grid-about-section a:hover {
