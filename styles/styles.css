@@ -71,21 +71,29 @@ div#container {
 }
 
 #main-info {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
   background: linear-gradient(
     90deg,
     rgb(168, 206, 225) 0%,
     rgb(158, 218, 96) 100%
   );
-  padding: 275px;
+  height: 100vh; /* Full viewport height */
   text-align: center;
   color: #ffffff;
   text-shadow: 2px 4px 4px rgba(46, 91, 173, 0.6);
 }
 
+#main-info .content {
+  max-width: 800px; /* Adjust as needed */
+  padding: 20px; /* Optional padding */
+}
+
 #main-info h1 {
   color: #ffffff;
-  text-align: center;
-  font-size: 75px;
+  font-size: 60px;
+  margin: 0;
 }
 
 h1 {
