@@ -413,14 +413,15 @@ h3.connect a:hover {
   }
 
   #main-info {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
     background: linear-gradient(
       90deg,
       rgb(168, 206, 225) 0%,
       rgb(158, 218, 96) 100%
     );
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 75px;
+    height: 100vh; /* Full viewport height */
     text-align: center;
     color: #ffffff;
     text-shadow: 2px 4px 4px rgba(46, 91, 173, 0.6);
