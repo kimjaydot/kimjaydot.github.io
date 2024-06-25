@@ -107,6 +107,13 @@ h2 {
   margin: 0;
 }
 
+h2.headliner {
+  /* text-decoration: underline;
+  text-underline-offset: 20px;
+  text-decoration-thickness: 2px;
+  text-decoration-color: #2e5bad;*/
+}
+
 h3 {
   font-size: 20px;
   margin: 0;
