@@ -208,7 +208,7 @@ h2.heading-style-w {
 }
 
 .aboutme-pic {
-  border-radius: 2px;
+  border-radius: 30px;
   border: 2px solid #2e5bad;
   width: 100%;
   max-width: 500px;
@@ -246,7 +246,7 @@ h2.heading-style-w {
 
 .card {
   background: white;
-  border-radius: 4px;
+  border-radius: 30px;
   border: 1px solid #b2beb5;
   padding: 0.5rem;
 }
