@@ -82,12 +82,16 @@ div#container {
   height: 100vh; /* Full viewport height */
   text-align: center;
   color: #ffffff;
-  text-shadow: 2px 4px 4px rgba(46, 91, 173, 0.6);
+  /*text-shadow: 2px 4px 4px rgba(46, 91, 173, 0.6);*/
 }
 
 #main-info .content {
   max-width: 800px; /* Adjust as needed */
   padding: 20px; /* Optional padding */
+}
+
+.content {
+  color: #000000;
 }
 
 #main-info h1 {
@@ -99,12 +103,15 @@ div#container {
 h1 {
   font-size: 40px;
   margin: 0;
+  text-shadow: 2px 4px 4px rgba(46, 91, 173, 0.6);
   padding: 0;
 }
 
 h2 {
-  font-size: 50px;
+  font-size: 35px;
   margin: 0;
+  color: #ffffff;
+  text-shadow: 2px 4px 4px rgba(46, 91, 173, 0.6);
 }
 
 h3 {
