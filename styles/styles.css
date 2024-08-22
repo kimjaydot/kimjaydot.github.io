@@ -35,7 +35,8 @@ div#container {
   justify-content: space-around;
   align-items: center;
   font-size: 28px;
-  box-shadow: 10px 10px 12px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 5px 5px 8px -8px rgba(0, 0, 0, 0.75);
+  border-bottom: 1px solid #2e5bad;
 }
 .logo-icon {
   color: #2e5bad;
