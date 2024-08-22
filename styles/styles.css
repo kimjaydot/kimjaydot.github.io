@@ -134,6 +134,7 @@ div#container {
 
 #main-info h2.nameheading2 {
   color: #000000;
+  text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.143);
 }
 h1 {
   font-size: 40px;
