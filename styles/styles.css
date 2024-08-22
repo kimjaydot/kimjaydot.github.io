@@ -73,25 +73,52 @@ div#container {
 
 #main-info {
   display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
+  justify-content: center; /* Center the entire content horizontally */
+  align-items: center; /* Center the entire content vertically */
   background: linear-gradient(
     90deg,
     rgb(168, 206, 225) 0%,
     rgb(158, 218, 96) 100%
   );
-  height: 100vh; /* Full viewport height */
-  text-align: center;
+  min-height: 100vh; /* Ensure the section is at least the height of the viewport */
   color: #ffffff;
+  text-align: center;
+  padding: 40px 20px; /* Add padding to prevent content from touching edges */
+  box-sizing: border-box; /* Ensure padding doesn't affect width */
+  overflow: auto; /* Allow content to overflow gracefully if necessary */
+}
+
+#main-info .content-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Create two equal columns */
+  gap: 20px; /* Space between the columns */
+  max-width: 1200px; /* Maximum width for the container */
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 #main-info .content {
-  max-width: 800px; /* Adjust as needed */
-  padding: 20px; /* Optional padding */
+  padding: 20px;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.1
+  ); /* Optional: add background for content */
+  border-radius: 30px; /* Optional: rounded corners */
+  color: #000000; /* Adjust text color */
 }
 
-.content {
-  color: #000000;
+#main-info h2 {
+  color: #ffffff;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+#main-info p {
+  color: #ffffff;
+  font-size: 18px;
 }
 
 #main-info h1 {
@@ -100,8 +127,13 @@ div#container {
   margin: 0;
 }
 
-h1.nameheading {
+#main-info h1.nameheading {
   text-shadow: 2px 4px 4px rgba(46, 91, 173, 0.6);
+  font-size: 50px;
+}
+
+#main-info h2.nameheading2 {
+  color: #000000;
 }
 h1 {
   font-size: 40px;
@@ -306,6 +338,12 @@ h3.connect a:hover {
   max-width: 100%;
 }
 
+@media all and (max-width: 768px) {
+  #main-info .content-wrapper {
+    grid-template-columns: 1fr; /* Stack columns vertically on smaller screens */
+  }
+}
+
 @media all and (max-width: 500px) {
   body {
     margin: 0;
@@ -361,7 +399,7 @@ h3.connect a:hover {
     height: 100vh; /* Full viewport height */
     text-align: center;
     color: #ffffff;
-    text-shadow: 2px 4px 4px rgba(46, 91, 173, 0.6);
+    /*text-shadow: 2px 4px 4px rgba(46, 91, 173, 0.6);*/
   }
 
   #main-info h1 {
@@ -441,7 +479,7 @@ h3.connect a:hover {
     height: 100vh; /* Full viewport height */
     text-align: center;
     color: #ffffff;
-    text-shadow: 2px 4px 4px rgba(46, 91, 173, 0.6);
+    /*text-shadow: 2px 4px 4px rgba(46, 91, 173, 0.6);*/
   }
 
   header#main-info .header-btn {
