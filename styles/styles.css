@@ -24,7 +24,7 @@ div#container {
   transition: color 0.4s ease;
 }
 
-.navbar {
+/* .navbar {
   position: fixed;
   overflow: hidden;
   top: 0;
@@ -37,7 +37,35 @@ div#container {
   font-size: 28px;
   box-shadow: 5px 5px 8px -8px rgba(0, 0, 0, 0.75);
   border-bottom: 1px solid #2e5bad;
+} */
+
+.navbar {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  width: 100%;
+  background: #ffffff;
+  color: #000000;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 28px;
+  box-shadow: 5px 5px 8px -8px rgba(0, 0, 0, 0.75);
+  /* Remove the solid border */
+  border-bottom: none;
+  z-index: 1000;
 }
+
+.navbar::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 6px; /* Thickness of the gradient border */
+  width: 100%;
+  background: linear-gradient(90deg, #2e5bad, #9eda60); /* Gradient colors */
+}
+
 .logo-icon {
   color: #2e5bad;
   font-weight: 700;
@@ -75,14 +103,15 @@ div#container {
   display: flex;
   justify-content: center; /* Center the entire content horizontally */
   align-items: center; /* Center the entire content vertically */
-  background: linear-gradient(
+  /*background: linear-gradient(
     90deg,
     rgb(168, 206, 225) 0%,
     rgb(158, 218, 96) 100%
-  );
+  );*/
+  background: linear-gradient(90deg, #ffffff 0%, #a8cee1 50%, #7dcfa4 100%);
   min-height: 100vh; /* Ensure the section is at least the height of the viewport */
-  color: #ffffff;
-  text-align: center;
+  color: #000000;
+  text-align: left;
   padding: 40px 20px; /* Add padding to prevent content from touching edges */
   box-sizing: border-box; /* Ensure padding doesn't affect width */
   overflow: auto; /* Allow content to overflow gracefully if necessary */
@@ -91,7 +120,7 @@ div#container {
 #main-info .content-wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Create two equal columns */
-  gap: 20px; /* Space between the columns */
+  gap: 10px; /* Space between the columns */
   max-width: 1200px; /* Maximum width for the container */
   width: 100%;
   margin: 0 auto;
@@ -99,13 +128,13 @@ div#container {
 }
 
 #main-info .content {
-  padding: 20px;
-  background-color: rgba(
+  padding: 10px;
+  /* background-color: rgba(
     255,
     255,
     255,
     0.1
-  ); /* Optional: add background for content */
+  ); Optional: add background for content */
   border-radius: 30px; /* Optional: rounded corners */
   color: #000000; /* Adjust text color */
 }
@@ -117,8 +146,8 @@ div#container {
 }
 
 #main-info p {
-  color: #ffffff;
-  font-size: 18px;
+  color: #000000;
+  font-size: 28px;
 }
 
 #main-info h1 {
@@ -128,13 +157,19 @@ div#container {
 }
 
 #main-info h1.nameheading {
-  text-shadow: 2px 4px 4px rgba(46, 91, 173, 0.6);
+  /*text-shadow: 2px 4px 4px rgba(46, 91, 173, 0.6);*/
+  color: #000000;
   font-size: 50px;
+  font-family: "Playfair Display", serif;
 }
 
 #main-info h2.nameheading2 {
   color: #000000;
   text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.143);
+}
+
+#main-info h2.headliner {
+  color: #000000;
 }
 h1 {
   font-size: 40px;
@@ -202,6 +237,7 @@ section {
   max-width: 100%;
   margin: 0 auto;
   padding: 50px;
+  background-color: #ffffff;
 }
 
 .heading-title {
