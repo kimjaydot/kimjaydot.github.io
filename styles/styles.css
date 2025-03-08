@@ -167,11 +167,13 @@ div#container {
 }
 
 .circular-image {
-  width: 150px; /* Adjust width as needed */
-  height: 150px; /* Height should be the same as width */
+  width: 230px; /* Adjust width as needed */
+  height: 230px; /* Height should be the same as width */
   border-radius: 50%; /* This makes it a circle */
   object-fit: cover; /* Ensures the image fits within the circle without distortion */
+  border: 5px solid #2e5bad; /* Solid border with your chosen color */
 }
+
 h1 {
   font-size: 40px;
   margin: 0;
