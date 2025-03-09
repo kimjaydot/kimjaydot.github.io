@@ -274,7 +274,7 @@ grid-template-columns: 1fr 2fr;
 }
 
 .grid-about-section div:nth-child(2) {
-  padding: 10px; /* Add padding to the text block */
+  padding: 10px;
 }
 
 .grid-about-section div {
