@@ -353,6 +353,7 @@ grid-template-columns: 1fr 2fr;
 } */
 
 .footer-section {
+  max-width: 100%;
   background: linear-gradient(
     to bottom,
     #2e5bad,
@@ -385,6 +386,30 @@ h3.connect a:hover {
 .fa-brands:hover {
   color: #000000;
   font-size: 35px;
+}
+
+/* Footer Info Section */
+.footer-info {
+  background: linear-gradient(90deg, #2e5bad, #9eda60);
+  border-radius: 30px;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.footer-info p {
+  margin: 5px 0;
+  color: #000000;
+}
+
+.footer-info a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-info a:hover {
+  text-decoration: underline;
 }
 
 @media all and (max-width: 768px) {
@@ -448,7 +473,6 @@ h3.connect a:hover {
     height: 100vh; /* Full viewport height */
     text-align: center;
     color: #ffffff;
-    /*text-shadow: 2px 4px 4px rgba(46, 91, 173, 0.6);*/
   }
 
   #main-info h1 {
@@ -528,7 +552,6 @@ h3.connect a:hover {
     height: 100vh; /* Full viewport height */
     text-align: center;
     color: #ffffff;
-    /*text-shadow: 2px 4px 4px rgba(46, 91, 173, 0.6);*/
   }
 
   header#main-info .header-btn {

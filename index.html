@@ -1105,7 +1105,7 @@
           </div>
         </div>
       </section>
-      <!--Start Footer Section-->
+      <!-- Start Footer Section -->
       <section class="footer-section">
         <footer>
           <div class="footer-3-narrow">
@@ -1115,47 +1115,44 @@
               <a
                 href="https://www.linkedin.com/in/kimberley-johnson/"
                 target="_blank"
-                ><i class="fa-brands fa-linkedin"></i
-              ></a>
+              >
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
               <a
                 href="https://stackoverflow.com/users/4687462/kimberley-johnson"
                 target="_blank"
               >
-                <i class="fa-brands fa-stack-overflow"></i
-              ></a>
+                <i class="fa-brands fa-stack-overflow"></i>
+              </a>
               <a href="https://github.com/kimjaydot" target="_blank">
-                <i class="fa-brands fa-square-github"></i
-              ></a>
+                <i class="fa-brands fa-square-github"></i>
+              </a>
 
               <p>
                 Kimberley Johnson
                 <br />
-
                 Email: kimjaydot@gmail.com
                 <br />
                 Phone: (281)-813-4128
               </p>
             </div>
-            <!-- <div>
-              <h3>For Hire</h3>
-              <p>
-                I am an aspiring UX Designer & Researcher seeking to contribute
-                my expertise to your business. I’m open to opportunities such as
-                internships, full-time roles, and contract work.
-              </p>
-            </div> -->
-            <!-- <div>
-              <h3>About this Website</h3>
-              <p>
-                My portfolio was coded in HTML5, CSS3, and JavaScript. It is
-                also open-sourced and hosted on
-              </p>
+          </div>
+
+          <!-- Copyright and Open Source Information -->
+          <div class="footer-info">
+            <p>
+              &copy; <span id="year"></span> Kimberley Johnson. All Rights
+              Reserved.
+            </p>
+            <p>
+              Coded in
+              <strong>HTML, CSS, and JavaScript</strong> and is
               <a
                 href="https://github.com/kimjaydot/kimjaydot.github.io"
-                class="github-btn"
-                >GitHub.com</a
-              >
-            </div> -->
+                target="_blank"
+                >open-sourced on GitHub</a
+              >.
+            </p>
           </div>
         </footer>
       </section>
@@ -1163,6 +1160,8 @@
       <!--End Footer Section-->
     </div>
     <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+
       const toggleButton = document.getElementById("toggleButton");
       const naviList = document.getElementById("navi-list");
 
