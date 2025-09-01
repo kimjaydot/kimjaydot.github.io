@@ -12,7 +12,7 @@ function adjustContentForViewport() {
     // Replace the first content block with shorter content
     content1.innerHTML = `
       <h1 class="nameheading">Hi, I'm Kim</h1>
-      <p>UX Designer & Researcher</p>
+      <h2 class="headliner">UX Designer & Researcher</h2>
     `;
   } else {
     // Restore the original content for larger screens
