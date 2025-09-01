@@ -12,14 +12,14 @@ function adjustContentForViewport() {
     // Replace the first content block with shorter content
     content1.innerHTML = `
       <h1 class="nameheading">Hi, I'm Kim</h1>
-      <h2 class="headliner">UX Designer & Researcher</h2>
+      <h2>UX Designer & Researcher</h2>
     `;
   } else {
     // Restore the original content for larger screens
     content2.style.display = "block"; // Shows the second content block
     content1.innerHTML = `
       <h1 class="nameheading">Hi, I'm Kim Johnson</h1>
-      <h2 class="headliner">UX Designer & Researcher</h2>
+      <h2>UX Designer & Researcher</h2>
       <img src="images/kimjavatar-ai.png" />
     `;
     introText.innerHTML = `
