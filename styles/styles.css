@@ -340,12 +340,12 @@ h2.heading-style-w {
 .card {
   background: white;
   border-radius: 30px;
-  border: 4px solid #b2beb5;
+  border: 2px solid #b2beb5;
   padding: 0.5rem;
 }
 
 .card-body {
-  padding: 32px;
+  padding: 25px;
 }
 
 .card-footer {
