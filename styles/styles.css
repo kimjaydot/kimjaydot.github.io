@@ -1359,3 +1359,166 @@ h3.connect a:hover {
     max-width: 280px;
   }
 }
+
+/* =========================================================
+   CONTACT / FOOTER
+   ========================================================= */
+.contact {
+  position: relative;
+  background: linear-gradient(to bottom, #2e5bad, #1d3c6c);
+  color: #ffffff;
+  padding: 90px clamp(16px, 5vw, 48px) 0;
+  scroll-margin-top: 60px;
+}
+.contact::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 6px;
+  background: linear-gradient(90deg, #2e5bad, #9eda60);
+}
+.contact-inner {
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
+}
+.contact-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 12px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.contact-eyebrow::before,
+.contact-eyebrow::after {
+  content: "";
+  width: 28px;
+  height: 4px;
+  border-radius: 2px;
+  background: #9eda60;
+}
+.contact-title {
+  font-family: "Playfair Display", serif;
+  font-weight: 800;
+  font-size: clamp(36px, 5vw, 56px);
+  margin: 0 0 14px;
+  color: #ffffff;
+}
+.contact-intro {
+  margin: 0 auto 32px;
+  max-width: 46ch;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #ffffff;
+  opacity: 0.92;
+}
+.contact-email {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 32px;
+  border-radius: 99px;
+  background: #ffffff;
+  color: #2e5bad;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.2s ease, background 0.3s ease;
+  word-break: break-all;
+}
+.contact-email:hover {
+  background: #9eda60;
+  color: #1d3c6c;
+  transform: translateY(-2px);
+}
+.contact-email .fa-solid {
+  font-size: 20px;
+}
+.contact-links {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin: 32px 0 0;
+  padding: 0;
+}
+.contact-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  border-radius: 99px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+.contact-links a:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: #ffffff;
+  color: #ffffff;
+}
+.contact-links .fa-brands,
+.contact-links .fa-solid {
+  font-size: 20px;
+  display: inline-block;
+  margin: 0;
+}
+.contact a:focus-visible {
+  outline: 3px solid #9eda60;
+  outline-offset: 3px;
+}
+
+.contact-bottom {
+  max-width: 1120px;
+  margin: 80px auto 0;
+  padding: 22px 0 26px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  font-size: 14px;
+}
+.contact-bottom p {
+  margin: 0;
+  color: #ffffff;
+  opacity: 0.85;
+}
+.contact-bottom a {
+  color: #ffffff;
+  font-weight: 600;
+}
+.back-top {
+  text-decoration: none;
+  white-space: nowrap;
+}
+.back-top:hover {
+  color: #9eda60;
+}
+
+@media all and (max-width: 560px) {
+  .contact {
+    padding-top: 64px;
+  }
+  .contact-email {
+    font-size: 16px;
+    padding: 14px 24px;
+  }
+  .contact-bottom {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 56px;
+  }
+}
