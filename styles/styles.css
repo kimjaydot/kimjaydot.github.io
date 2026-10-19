@@ -17,10 +17,13 @@ div#container {
   background-color: #ffffff;
 }
 
+/* ---------- Navigation (refreshed to match case study pages) ---------- */
 .navbar .logo-icon a {
   text-decoration: none;
   color: #2e5bad;
   font-weight: 700;
+  font-size: 22px;
+  letter-spacing: 0.5px;
   transition: color 0.4s ease;
 }
 
@@ -28,15 +31,17 @@ div#container {
   position: fixed;
   overflow: hidden;
   top: 0;
+  left: 0;
   width: 100%;
+  box-sizing: border-box;
   background: #ffffff;
   color: #000000;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  font-size: 28px;
-  box-shadow: 5px 5px 8px -8px rgba(0, 0, 0, 0.75);
-  /* Remove the solid border */
+  padding: 14px clamp(16px, 5vw, 48px);
+  font-size: 16px;
+  box-shadow: 0 4px 10px -8px rgba(0, 0, 0, 0.5);
   border-bottom: none;
   z-index: 1000;
 }
@@ -46,7 +51,7 @@ div#container {
   position: absolute;
   bottom: 0;
   left: 0;
-  height: 6px; /* Thickness of the gradient border */
+  height: 5px; /* Thickness of the gradient border */
   width: 100%;
   background: linear-gradient(90deg, #2e5bad, #9eda60); /* Gradient colors */
 }
@@ -64,23 +69,26 @@ div#container {
 
 .navbar a:hover {
   color: #2e5bad;
-  border-bottom: 3px solid #000000;
 }
 
 .navlist {
   list-style-type: none;
+  margin: 0;
   padding: 0;
+  display: flex;
+  gap: 28px;
 }
 
 .navlist li {
   display: inline;
-  padding: 16px;
+  padding: 0;
 }
 
 .menu-line {
-  width: 20px;
+  width: 22px;
   height: 3px;
   margin-bottom: 4px;
+  border-radius: 2px;
   background-color: #2e5bad;
 }
 
@@ -445,24 +453,27 @@ h3.connect a:hover {
   }
 
   .navbar {
-    flex-direction: column;
-    /*position: relative;*/
+    flex-wrap: wrap;
     position: fixed;
+    padding: 12px 16px;
   }
 
-  .navbar .logo-icon {
-    width: 100%;
+  .navbar .logo-icon a {
+    font-size: 18px;
   }
+
   .menu {
     display: block;
-    position: absolute;
-    right: 15px;
-    top: 10px;
+    cursor: pointer;
+    padding: 6px 0 2px;
+    order: 2;
   }
 
   .navlist {
-    list-style-type: none;
     width: 100%;
+    order: 3;
+    flex-direction: column;
+    gap: 0;
     text-align: center;
     padding-top: 10px;
     display: none;
@@ -470,11 +481,16 @@ h3.connect a:hover {
 
   .navlist li {
     display: block;
-    border-top: 1px solid #2e5bad;
+    border-top: 1px solid #e1eef5;
   }
 
-  .active {
+  .navlist li a {
     display: block;
+    padding: 12px 0;
+  }
+
+  .navlist.active {
+    display: flex;
   }
 
   #main-info {
