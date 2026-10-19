@@ -906,3 +906,95 @@ h3.connect a:hover {
     padding: 6px 12px;
   }
 }
+
+/* =========================================================
+   PROJECT CARDS (responsive fix)
+   ========================================================= */
+.grid-separation-three .card {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.grid-separation-three .card > br {
+  display: none;
+}
+
+.grid-separation-three .card-header {
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.grid-separation-three .card-header img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+.grid-separation-three .card-body {
+  flex: 1;
+}
+
+.grid-separation-three .card-footer {
+  text-align: center;
+}
+
+/* Tablet: one column, logo beside the text */
+@media all and (max-width: 960px) {
+  .grid-separation-three {
+    grid-template-columns: 1fr;
+    max-width: 760px;
+    margin: 0 auto;
+  }
+
+  .grid-separation-three .card {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    grid-template-rows: auto auto;
+    align-items: center;
+  }
+
+  .grid-separation-three .card-header {
+    grid-row: 1 / span 2;
+    height: 100%;
+    min-height: 160px;
+  }
+
+  .grid-separation-three .card-body {
+    padding: 24px 24px 8px 8px;
+  }
+
+  .grid-separation-three .card-footer {
+    padding: 0 24px 24px 8px;
+    text-align: left;
+  }
+}
+
+/* Phone: stack logo on top of the text */
+@media all and (max-width: 560px) {
+  .grid-separation-three .card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .grid-separation-three .card-header {
+    height: 140px;
+    min-height: 0;
+  }
+
+  .grid-separation-three .card-body {
+    padding: 8px 22px 16px;
+  }
+
+  .grid-separation-three .card-footer {
+    padding: 0 22px 26px;
+    text-align: center;
+  }
+}
