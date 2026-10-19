@@ -888,6 +888,13 @@ h3.connect a:hover {
   box-sizing: border-box;
 }
 
+/* Original tablet/phone gradient (light blue to green) */
+@media all and (max-width: 960px) {
+  .hero {
+    background: linear-gradient(90deg, #a8cee1 0%, #9eda60 100%);
+  }
+}
+
 @media all and (max-width: 860px) {
   .hero {
     min-height: auto;
