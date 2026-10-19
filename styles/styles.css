@@ -308,14 +308,44 @@ h2.heading-style-w {
   justify-content: center;
 }
 
-.aboutme-pic {
-  border-radius: 30px;
-  border: 2px solid #2e5bad;
-  width: 100%;
+/* About photo: offset gradient block behind the picture */
+.aboutme-photo {
+  position: relative;
+  width: calc(100% - 18px);
   max-width: 500px;
+  margin: 0 auto 18px;
+}
+
+.aboutme-photo::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: translate(18px, 18px);
+  border-radius: 30px;
+  background: linear-gradient(135deg, #2e5bad, #9eda60);
+  z-index: 0;
+}
+
+.aboutme-pic {
+  position: relative;
+  z-index: 1;
+  border-radius: 30px;
+  width: 100%;
   height: auto;
   display: block;
-  margin: 0 auto;
+}
+
+@media all and (max-width: 500px) {
+  .aboutme-photo {
+    width: calc(100% - 12px);
+  }
+  .aboutme-photo::before {
+    transform: translate(12px, 12px);
+    border-radius: 24px;
+  }
+  .aboutme-pic {
+    border-radius: 24px;
+  }
 }
 
 .grid-about-section a:hover {
