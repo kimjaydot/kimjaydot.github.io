@@ -1232,3 +1232,130 @@ h3.connect a:hover {
     padding: 8px;
   }
 }
+
+/* =========================================================
+   ABOUT SECTION
+   ========================================================= */
+.about {
+  background: #e1eef5;
+  padding: 90px clamp(16px, 5vw, 48px) 80px;
+  scroll-margin-top: 60px;
+}
+.about-inner {
+  max-width: 1120px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 64px;
+  align-items: center;
+}
+.about-photo-col .aboutme-photo {
+  max-width: 440px;
+}
+.about-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 12px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #2e5bad;
+}
+.about-eyebrow::before {
+  content: "";
+  width: 28px;
+  height: 4px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, #2e5bad, #9eda60);
+}
+.about-title {
+  font-family: "Playfair Display", serif;
+  font-weight: 800;
+  font-size: clamp(32px, 4.2vw, 46px);
+  line-height: 1.1;
+  margin: 0 0 22px;
+  color: #111111;
+}
+.about-text p:not(.about-eyebrow) {
+  margin: 0 0 16px;
+  font-size: 16.5px;
+  font-weight: 300;
+  line-height: 1.75;
+  color: #222222;
+}
+.about-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 28px;
+}
+
+.about-facts {
+  list-style: none;
+  max-width: 1120px;
+  margin: 64px auto 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+.about-facts li {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 20px 22px;
+  border-top: 5px solid #2e5bad;
+  box-shadow: 0 10px 26px -18px rgba(46, 91, 173, 0.45);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.about-facts li:nth-child(2) { border-top-color: #7dcfa4; }
+.about-facts li:nth-child(3) { border-top-color: #9eda60; }
+.about-facts li:nth-child(4) { border-top-color: #a8cee1; }
+.fact-label {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #5a6270;
+}
+.fact-main {
+  font-size: 17px;
+  font-weight: 600;
+  color: #111111;
+}
+.fact-sub {
+  font-size: 14px;
+  font-weight: 300;
+  color: #333333;
+}
+
+@media all and (max-width: 960px) {
+  .about-inner {
+    grid-template-columns: 1fr;
+    gap: 44px;
+    max-width: 640px;
+  }
+  .about-photo-col .aboutme-photo {
+    max-width: 340px;
+  }
+  .about-facts {
+    grid-template-columns: 1fr 1fr;
+    max-width: 640px;
+  }
+}
+
+@media all and (max-width: 560px) {
+  .about {
+    padding: 64px 16px 60px;
+  }
+  .about-facts {
+    grid-template-columns: 1fr;
+    margin-top: 44px;
+  }
+  .about-photo-col .aboutme-photo {
+    max-width: 280px;
+  }
+}
