@@ -9,7 +9,7 @@
       name="description"
       content="Kimberley Johnson is a UX Designer & Researcher based in Texas."
     />
-    <link rel="stylesheet" type="text/css" href="/styles/styles.css?v=2" />
+    <link rel="stylesheet" type="text/css" href="/styles/styles.css?v=3" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -1135,10 +1135,21 @@
             is by email.
           </p>
 
-          <a class="contact-email" href="mailto:kimjaydot@gmail.com">
+          <button
+            type="button"
+            class="contact-email"
+            id="copyEmail"
+            data-email="kimjaydot@gmail.com"
+          >
             <i class="fa-solid fa-envelope" aria-hidden="true"></i>
-            kimjaydot@gmail.com
-          </a>
+            <span id="copyEmailText">kimjaydot@gmail.com</span>
+            <span class="copy-hint" aria-hidden="true">Copy</span>
+          </button>
+          <p class="contact-alt">
+            Click to copy, or
+            <a href="mailto:kimjaydot@gmail.com">open in your email app</a>
+          </p>
+          <p class="sr-only" id="copyStatus" aria-live="polite"></p>
 
           <ul class="contact-links">
             <li>
@@ -1183,6 +1194,45 @@
       toggleButton.addEventListener("click", () => {
         naviList.classList.toggle("active");
       });
+
+      // Copy email to clipboard (works even without an email app set up)
+      const copyBtn = document.getElementById("copyEmail");
+      const copyText = document.getElementById("copyEmailText");
+      const copyStatus = document.getElementById("copyStatus");
+      if (copyBtn) {
+        copyBtn.addEventListener("click", async () => {
+          const email = copyBtn.dataset.email;
+          let copied = false;
+          try {
+            await navigator.clipboard.writeText(email);
+            copied = true;
+          } catch (err) {
+            const temp = document.createElement("textarea");
+            temp.value = email;
+            temp.setAttribute("readonly", "");
+            temp.style.position = "absolute";
+            temp.style.left = "-9999px";
+            document.body.appendChild(temp);
+            temp.select();
+            try {
+              copied = document.execCommand("copy");
+            } catch (e) {}
+            document.body.removeChild(temp);
+          }
+          if (copied) {
+            copyBtn.classList.add("copied");
+            copyText.textContent = "Copied to clipboard!";
+            copyStatus.textContent = "Email address copied to clipboard";
+            setTimeout(() => {
+              copyBtn.classList.remove("copied");
+              copyText.textContent = email;
+              copyStatus.textContent = "";
+            }, 2200);
+          } else {
+            window.location.href = "mailto:" + email;
+          }
+        });
+      }
 
     </script>
   </body>

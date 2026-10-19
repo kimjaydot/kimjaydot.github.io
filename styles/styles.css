@@ -1522,3 +1522,53 @@ h3.connect a:hover {
     margin-top: 56px;
   }
 }
+
+/* Copy-email button */
+button.contact-email {
+  border: 0;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.2;
+}
+.copy-hint {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 99px;
+  background: #e1eef5;
+  color: #2e5bad;
+}
+.contact-email.copied {
+  background: #9eda60;
+  color: #1d3c6c;
+}
+.contact-email.copied .copy-hint {
+  display: none;
+}
+.contact-email:focus-visible {
+  outline: 3px solid #9eda60;
+  outline-offset: 3px;
+}
+.contact-alt {
+  margin: 14px 0 0;
+  font-size: 14px;
+  color: #ffffff;
+  opacity: 0.85;
+}
+.contact-alt a {
+  color: #ffffff;
+  font-weight: 600;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
