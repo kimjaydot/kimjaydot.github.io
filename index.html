@@ -41,25 +41,43 @@
         </div>
       </nav>
 
-      <header id="main-info">
-        <div class="content-wrapper">
-          <div class="content1" id="content-1">
-            <h1 class="nameheading">Hi, I'm Kim Johnson</h1>
-            <h2>UX Designer & Researcher</h2>
-            <img
-              src="images/mekim.jpg"
-              alt="about me pic"
-              class="circular-image"
-            />
-          </div>
-          <div class="content2" id="content-2">
-            <h2 class="nameheading2"></h2>
-            <p>
+      <header id="home" class="hero">
+        <div class="hero-shape hero-shape-1" aria-hidden="true"></div>
+        <div class="hero-shape hero-shape-2" aria-hidden="true"></div>
+        <div class="hero-inner">
+          <div class="hero-text">
+            <p class="hero-eyebrow">UX Designer &amp; Researcher</p>
+            <h1 class="hero-title">Hi, I'm Kim Johnson</h1>
+            <p class="hero-intro">
               I design clear, research-driven experiences for people and their
               pets, backed by seven years of web design.
             </p>
-
-            <a href="#work" class="header-btn">View my work</a>
+            <div class="hero-buttons">
+              <a href="#work" class="hero-btn hero-btn-primary">View my work</a>
+              <a
+                href="/images/portfolio/kjohnson-resume-2026.pdf"
+                class="hero-btn hero-btn-secondary"
+                target="_blank"
+                >Resume</a
+              >
+            </div>
+            <ul class="hero-skills" aria-label="Skills">
+              <li>UX Research</li>
+              <li>Prototyping</li>
+              <li>Design Systems</li>
+              <li>Accessibility</li>
+              <li>Front-end Dev</li>
+            </ul>
+            <p class="hero-status">
+              <span class="hero-dot" aria-hidden="true"></span>
+              Open to UX roles &middot; Texas &amp; remote
+            </p>
+          </div>
+          <div class="hero-photo">
+            <img
+              src="images/mekim.jpg"
+              alt="Portrait of Kimberley Johnson smiling"
+            />
           </div>
         </div>
       </header>
@@ -1156,54 +1174,6 @@
         naviList.classList.toggle("active");
       });
 
-      function adjustContentForViewport() {
-        const viewportWidth = window.innerWidth;
-        const content1 = document.getElementById("content-1");
-        const content2 = document.getElementById("content-2");
-        const introText = document.getElementById("intro-text");
-
-        // For smaller screens (e.g., less than 768px wide)
-        if (viewportWidth < 768) {
-          // Hide content-2 and replace content-1 with a shorter version
-          content2.style.display = "none"; // Hides the second content block
-
-          // Replace the first content block with shorter content
-          content1.innerHTML = `
-      <h1 class="nameheading">Hi, I'm Kim</h1>
-      <h2 class="headliner">UX Designer & Researcher</h2>
- 
-         <img
-              src="images/mekim.jpg"
-              alt="about me pic"
-              class="circular-image"
-            />
-        <br />
-         <a href="#work" class="header-btn">View my work</a>
-    `;
-        } else {
-          // Restore the original content for larger screens
-          content2.style.display = "block"; // Shows the second content block
-          content1.innerHTML = `
-      <h1 class="nameheading">Hi, I'm Kim Johnson</h1>
-      <h2 class="headliner">UX Designer & Researcher</h2>
-  
-     <img
-              src="images/mekim.jpg"
-              alt="about me pic"
-              class="circular-image"
-            />
-    `;
-          if (introText) introText.innerHTML = `
-      I specialize in creating engaging digital experiences by leveraging user feedback and innovative design...
-    `;
-        }
-      }
-
-      // Run the function on initial page load
-      adjustContentForViewport();
-
-      // Run the function on window resize
-      window.addEventListener("resize", adjustContentForViewport);
     </script>
   </body>
 </html>

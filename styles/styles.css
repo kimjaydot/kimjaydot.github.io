@@ -705,3 +705,229 @@ h3.connect a:hover {
     padding: 10px 10px;
   }
 }
+
+/* =========================================================
+   HERO (text left, photo right, skill tags)
+   ========================================================= */
+.hero {
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 110px clamp(16px, 5vw, 48px) 60px;
+  background: linear-gradient(90deg, #ffffff 0%, #a8cee1 50%, #7dcfa4 100%);
+  color: #111111;
+  box-sizing: border-box;
+}
+
+.hero-inner {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 56px;
+  align-items: center;
+}
+
+.hero-shape {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+}
+.hero-shape-1 {
+  width: 240px;
+  height: 240px;
+  top: 40px;
+  right: 30%;
+  background: rgba(255, 255, 255, 0.35);
+}
+.hero-shape-2 {
+  width: 150px;
+  height: 150px;
+  bottom: 40px;
+  left: -50px;
+  background: rgba(46, 91, 173, 0.12);
+}
+
+.hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 16px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #2e5bad;
+}
+.hero-eyebrow::before {
+  content: "";
+  width: 28px;
+  height: 4px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, #2e5bad, #9eda60);
+}
+
+.hero-title {
+  font-family: "Playfair Display", serif;
+  font-weight: 800;
+  font-size: clamp(42px, 6vw, 76px);
+  line-height: 1.05;
+  margin: 0;
+  color: #111111;
+}
+
+.hero-intro {
+  font-size: clamp(18px, 2vw, 21px);
+  line-height: 1.6;
+  max-width: 34ch;
+  margin: 20px 0 32px;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.hero-btn {
+  display: inline-block;
+  padding: 15px 30px;
+  border-radius: 99px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+.hero-btn-primary {
+  background: #2e5bad;
+  color: #ffffff;
+  border: 2px solid #2e5bad;
+}
+.hero-btn-primary:hover {
+  background: #000000;
+  border-color: #000000;
+}
+.hero-btn-secondary {
+  background: rgba(255, 255, 255, 0.6);
+  color: #2e5bad;
+  border: 2px solid #2e5bad;
+}
+.hero-btn-secondary:hover {
+  background: #2e5bad;
+  color: #ffffff;
+}
+.hero-btn:focus-visible {
+  outline: 3px solid #000000;
+  outline-offset: 3px;
+}
+
+.hero-skills {
+  list-style: none;
+  padding: 0;
+  margin: 28px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.hero-skills li {
+  font-size: 13px;
+  font-weight: 500;
+  padding: 7px 16px;
+  border-radius: 99px;
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(46, 91, 173, 0.25);
+  color: #2e5bad;
+}
+
+.hero-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin: 22px 0 0;
+  font-size: 14px;
+  padding: 8px 16px;
+  border-radius: 99px;
+  background: rgba(255, 255, 255, 0.75);
+}
+.hero-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #3fa34d;
+  box-shadow: 0 0 0 4px rgba(63, 163, 77, 0.2);
+}
+
+.hero-photo {
+  position: relative;
+  width: min(380px, 100%);
+  justify-self: center;
+}
+.hero-photo::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #2e5bad, #9eda60);
+  transform: translate(18px, 18px);
+}
+.hero-photo img {
+  position: relative;
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 6px solid #ffffff;
+  box-sizing: border-box;
+}
+
+@media all and (max-width: 860px) {
+  .hero {
+    min-height: auto;
+    padding-top: 100px;
+    padding-bottom: 56px;
+  }
+  .hero-inner {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    text-align: center;
+  }
+  .hero-photo {
+    order: -1;
+    width: 210px;
+  }
+  .hero-photo::before {
+    transform: translate(10px, 10px);
+  }
+  .hero-intro {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero-buttons,
+  .hero-skills {
+    justify-content: center;
+  }
+  .hero-shape-1 {
+    width: 160px;
+    height: 160px;
+    right: -40px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .hero-btn {
+    padding: 13px 24px;
+    font-size: 13px;
+  }
+  .hero-skills li {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+}
