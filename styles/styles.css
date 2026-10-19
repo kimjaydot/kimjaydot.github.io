@@ -943,7 +943,7 @@ h3.connect a:hover {
   font-weight: 600;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  color: #cfe8b4;
+  color: #ffffff;
 }
 .work-eyebrow::before {
   content: "";
@@ -1023,7 +1023,7 @@ h3.connect a:hover {
   font-family: "Playfair Display", serif;
   font-weight: 800;
   font-size: 22px;
-  color: rgba(46, 91, 173, 0.35);
+  color: #2e5bad;
 }
 
 .work-body {
