@@ -1572,3 +1572,53 @@ button.contact-email {
   white-space: nowrap;
   border: 0;
 }
+
+/* Coming soon card (wide strip under the project cards) */
+.tint-sky { background: #eef3fb; }
+.work-soon {
+  grid-column: 1 / -1;
+  flex-direction: row;
+  border: 2px dashed rgba(46, 91, 173, 0.35);
+  background: #fbfcfe;
+}
+.work-soon:hover {
+  transform: none;
+  box-shadow: 0 10px 30px -18px rgba(0, 0, 0, 0.45);
+}
+.work-soon .work-logo {
+  width: 34%;
+  height: auto;
+  min-height: 200px;
+  flex-shrink: 0;
+}
+.soon-badge {
+  align-self: flex-start;
+  margin-bottom: 12px;
+  background: #2e5bad;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 6px 12px;
+  border-radius: 99px;
+}
+.work-soon .work-body p {
+  flex: 0;
+}
+.soon-note {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #5a6270;
+}
+@media all and (max-width: 640px) {
+  .work-soon {
+    flex-direction: column;
+  }
+  .work-soon .work-logo {
+    width: 100%;
+    min-height: 160px;
+  }
+}
