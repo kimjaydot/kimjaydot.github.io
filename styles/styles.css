@@ -1622,3 +1622,55 @@ button.contact-email {
     min-height: 160px;
   }
 }
+
+/* Featured project (large card above the project grid) */
+.work-feature {
+  min-height: 300px;
+}
+.work-feature .work-logo {
+  width: 44%;
+  position: relative;
+}
+.work-feature .work-logo svg {
+  width: 150px;
+  height: 150px;
+}
+.work-feature .work-body {
+  padding: 36px 40px;
+  justify-content: center;
+}
+.work-feature h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+.work-feature .work-body p {
+  font-size: 17px;
+  max-width: 46ch;
+}
+.feature-label {
+  position: absolute;
+  top: 16px;
+  left: 18px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #2e5bad;
+}
+@media all and (max-width: 860px) {
+  .work-feature {
+    flex-direction: column;
+  }
+  .work-feature .work-logo {
+    width: 100%;
+    min-height: 200px;
+  }
+  .work-feature .work-body {
+    padding: 26px 24px;
+  }
+  .work-feature h3 {
+    font-size: 26px;
+  }
+}
